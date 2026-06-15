@@ -54,7 +54,7 @@
         sim_layer {
             label = "SYM";
             bindings = <
-  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &trans      &kp SQT     &kp DQT
+  &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &kp GRAVE   &kp SQT     &kp DQT
   &trans    &trans  &kp RA(S)  &trans    &trans       &kp C_MUTE    &trans        &trans      &trans      &trans
   &trans    &trans  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &kp BSLH
                     &trans     &trans    &mo 3        &trans        &kp C_PP      &trans
