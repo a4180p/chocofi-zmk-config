@@ -1,8 +1,126 @@
+# Generated from `keymap dump-config` defaults plus shifted legends.
+# The full map must be inlined: supplying zmk_keycode_map in a partial
+# config REPLACES the built-in map rather than merging into it.
+parse_config:
+  zmk_keycode_map:
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL:
+      t: '='
+      s: +
+    PLUS: +
+    MINUS:
+      t: '-'
+      s: _
+    UNDERSCORE: _
+    UNDER: _
+    SLASH:
+      t: /
+      s: '?'
+    FSLH:
+      t: /
+      s: '?'
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH:
+      t: \
+      s: '|'
+    BSLH:
+      t: \
+      s: '|'
+    PIPE: '|'
+    NON_US_BACKSLASH:
+      t: \
+      s: '|'
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON:
+      t: ;
+      s: ':'
+    SEMI:
+      t: ;
+      s: ':'
+    COLON: ':'
+    SINGLE_QUOTE:
+      t: ''''
+      s: '"'
+    SQT:
+      t: ''''
+      s: '"'
+    APOSTROPHE:
+      t: ''''
+      s: '"'
+    APOS:
+      t: ''''
+      s: '"'
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA:
+      t: ','
+      s: <
+    LESS_THAN: <
+    LT: <
+    PERIOD:
+      t: .
+      s: '>'
+    DOT:
+      t: .
+      s: '>'
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET:
+      t: '['
+      s: '{'
+    LBKT:
+      t: '['
+      s: '{'
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET:
+      t: ']'
+      s: '}'
+    RBKT:
+      t: ']'
+      s: '}'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE:
+      t: '`'
+      s: '~'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
 draw_config:
-  svg_extra_style: |
-    /* Cyrillic legend: ASCII-sized, red, inset from the corner */
+  svg_extra_style: '/* Cyrillic legend: ASCII-sized, red, inset from the corner */
+
     text.br { font-size: 14px; fill: red; transform: translate(-4px, -4px); }
+
     /* modifiers moved to bottom-left: match br baseline */
+
     text.bl { transform: translate(0, -4px); }
+
     /* soften combo boxes so legends underneath stay readable */
+
     rect.combo { fill-opacity: 0.45; }
+    text.shifted { transform: translateY(7px); }
+
+    '

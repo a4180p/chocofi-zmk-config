@@ -20,7 +20,7 @@ layers:
   - {t: J, br: о}
   - {t: K, br: л}
   - {t: L, br: д}
-  - {t: ;, br: ж, bl: LCTRL}
+  - {t: ;, s: ':', br: ж, bl: LCTRL}
   - {t: Z, br: я, bl: LSHFT}
   - {t: X, br: ч}
   - {t: C, br: с}
@@ -28,9 +28,9 @@ layers:
   - {t: B, br: и}
   - {t: N, br: т}
   - {t: M, br: ь}
-  - {t: ',', br: б}
-  - {t: ., br: ю}
-  - {t: /, br: ., bl: RSHFT}
+  - {t: ',', s: <, br: б}
+  - {t: ., s: '>', br: ю}
+  - {t: /, s: '?', br: ., bl: RSHFT}
   - {t: TAB, h: LALT}
   - {t: TAB, h: LGUI}
   - {t: SPACE, h: num}
@@ -41,7 +41,7 @@ layers:
   - ESC
   - {t: ▽, type: trans}
   - UP
-  - '='
+  - {t: '=', s: +}
   - {t: '{', br: Х}
   - {t: '}', br: Ъ}
   - '7'
@@ -52,12 +52,12 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - {t: '[', br: х}
-  - {t: ']', br: ъ}
+  - {t: '[', s: '{', br: х}
+  - {t: ']', s: '}', br: ъ}
   - '4'
   - '5'
   - '6'
-  - '-'
+  - {t: '-', s: _}
   - DEL
   - PG UP
   - CAPSLOCK
@@ -82,8 +82,8 @@ layers:
   - '%'
   - {t: ^, br: ':'}
   - {t: '&', br: '?'}
-  - {t: '`', br: ё}
-  - {t: '''', br: э}
+  - {t: '`', s: '~', br: ё}
+  - {t: '''', s: '"', br: э}
   - {t: '"', br: Э}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,7 +104,7 @@ layers:
   - VOL UP
   - PREV
   - NEXT
-  - \
+  - {t: \, s: '|'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ADJ
