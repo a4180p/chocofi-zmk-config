@@ -42,8 +42,8 @@ layers:
   - {t: ▽, type: trans}
   - UP
   - '='
-  - '{'
-  - '}'
+  - {t: '{', br: Х}
+  - {t: '}', br: Ъ}
   - KP 7
   - KP 8
   - KP 9
@@ -76,15 +76,15 @@ layers:
   - {t: ▽, type: trans}
   SYM:
   - '!'
-  - '@'
-  - '#'
-  - $
+  - {t: '@', br: '"'}
+  - {t: '#', br: №}
+  - {t: $, br: ;}
   - '%'
-  - ^
-  - '&'
+  - {t: ^, br: ':'}
+  - {t: '&', br: '?'}
   - {t: '`', br: ё}
   - {t: '''', br: э}
-  - '"'
+  - {t: '"', br: Э}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - AltGr+S
