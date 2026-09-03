@@ -1,0 +1,23 @@
+name: Draw ZMK keymaps
+
+on:
+  workflow_dispatch: # can be triggered manually
+  push: # automatically run on changes to these paths
+    paths:
+      - "config/*.keymap"
+      - "config/*.json"
+      - "keymap_drawer.config.yaml"
+
+jobs:
+  draw:
+    uses: a4180p/keymap-drawer/.github/workflows/draw-zmk.yml@ru
+    permissions:
+      contents: write # allow the workflow to commit the redrawn SVG
+    with:
+      keymap_patterns: "config/*.keymap"
+      config_path: "keymap_drawer.config.yaml"
+      output_folder: "keymap-drawer"
+      # Cyrillic legends live in this fork, so install from it
+      cyrillic_legends: true
+      install_repo: "https://github.com/a4180p/keymap-drawer.git"
+      install_branch: "ru"
